@@ -1,0 +1,49 @@
+/*
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    background: #ffffff
+}
+
+.sushi-board {
+    width: 640px;
+    height: 640px;
+    border: 2px solid #ffffff;
+}
+
+.sushi {
+    border: 2px solid aqua;
+}
+.img {
+    width: 100px;
+}
+*/
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#container {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-rows: repeat(var(--grid-rows), 50px);
+    grid-template-columns: repeat(var(--grid-cols), 50px);
+}
+
+.grid-item {
+    padding: 1em;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
